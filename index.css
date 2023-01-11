@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:rgb(0, 132, 255);
+
+}
+.todo{
+    display:flex;
+    flex-direction: row;
+
+    color:white;
+    justify-content: center;
+    padding-top: 20px;
+    margin:0px 10px;
+
+
+
+}
+#container{
+text-decoration: none;
+list-style:none;
+    color:white;
+    margin:5px 0px;
+    
+     
+}
+  
+#insert{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+#oo{
+    text-decoration: none;
+    list-style:none;
+    
+    flex-direction: row;
+        color:white;
+        background-color:rgb(5, 71, 133);
+        box-shadow: 0px 6px 8px 1px rgb(31, 30, 30);
+        border-radius: 10px;
+        height:28px;
+     margin-left: auto;
+     margin-right: auto;
+        max-width:480px;
+        min-width: 150px;
+        overflow:auto;
+  
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 15px;
+        background-color:rgb(0, 132, 255);
+        padding-left:20px;
+        padding-top: 4px;
+        
+        
+        
+      
+
+}
+#containere div a{
+    
+    text-decoration: none;
+    color:inherit;
+    max-width: 200px;
+    overflow: hidden;
+  
+}
+#insert{
+    width:300px;
+    height:30px;
+    border-radius: 5px;
+    box-shadow: 0px -2px -5px -1px rgb(20, 20, 20);
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+
+#par{
+    padding-top: 30px;
+   font-weight: bolder;
+    color:rgb(189, 44, 18);
+    font-size: 35px;
+    padding-bottom: 0px;
+    padding-left:auto;
+    margin:0px 40px;
+    margin-top:30px;
+   
+ 
+   
+    
+}
+.btn{
+    background-color: brown;
+    border-radius: 5px;
+    color:white;
+    width:100px;
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 2px 0px rgb(24, 23, 23);
+}
+
+.box{
+    margin:20px 430px;
+    background-color: rgb(19, 72, 107);
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px 5px rgb(49, 49, 49);
+
+}
+#bb ,#aa{
+    
+    float:right;
+  
+    padding-right: 8px;
+    padding-top: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    
+    overflow: hidden;
+   
+    
+   
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    #oo{
+        width:260px;
+    }
+    .box{
+        margin:10px 25px;
+    }
+    .todo{
+        margin:0 5px;
+    }
+    #bb,#aa{
+        float:right;
+       
+        padding-right: 8px;
+        padding-top: 6px;
+        cursor: pointer;
+        font-size: 12px;
+       
+    }
+    
+}
+

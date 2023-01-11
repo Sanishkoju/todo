@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box">
+    <div id="par">TODO</div>
+    <div class="todo">
+       
+        
+        <input id="insert" type="text" placeholder="Enter text">
+        <button class="btn">Add</button>
+    </div>
+</div>
+    <div id="containere">
+        <div id="container" >
+    
+
+        </div>
+        
+        
+    </div>
+    <script >
+        let inse=document.getElementById("insert")
+        let contai=document.getElementById("container")
+
+
+        let list=[]
+        document.querySelector(".btn").addEventListener("click",function(){
+            list.push(inse.value)
+            
+           
+            showList()
+        })
+        function showList(){
+            contai.innerHTML=""
+            list.forEach(function(e,i){
+                contai.innerHTML +="<div id=oo>"+"<a id='cc' href=https://www."+e+
+                    ".com target='_blank' rel='noopener noreferrer'>"
+                    +e+"</a>"+"<a id='aa'onclick='del("+i+")'>&times;</a>"
+                    +"<a id='bb' onclick='edit("+i+")'>Edit</a>"+"</div>";
+                
+                    
+                    
+            })
+        }
+   function del(i){
+    list.splice(i,1);
+    showList();
+   }
+      
+
+   function edit(i){
+    let newvalue=prompt("Insert any new text")
+    list.splice(i,1,newvalue);
+    showList();
+   }
+      
+    </script>
+
+    
+</body>
+</html>
