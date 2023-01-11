@@ -140,7 +140,7 @@ body{
     padding: 0%;
 }
     #oo{
-        width:260px;
+        margin:0px 20px;
       position: relative;
        
     }
@@ -176,7 +176,7 @@ body{
         position: absolute;
         overflow: auto;
     
-        width:200px;
+        width:350px;
 
     }
     #oo{
